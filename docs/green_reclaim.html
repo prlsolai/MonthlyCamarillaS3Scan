@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monthly Green Candle Reclaims S3</title>
+<style>
+:root{--bg:#0f1419;--card:#1a2129;--tx:#e6edf3;--mu:#8b98a5;--ac:#3fb950;--rd:#f85149;--bd:#2b3640}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,sans-serif;padding:12px;max-width:760px;margin:auto}
+h1{font-size:19px;margin:4px 0}h2{font-size:16px;margin:18px 0 8px}.mu{color:var(--mu);font-size:13px}a{color:#58a6ff}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px;margin:10px 0}
+.row{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.g{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+.g div{background:#121820;border-radius:6px;padding:6px;text-align:center}.g b{display:block;font-size:14px}.g span{font-size:11px;color:var(--mu)}
+.t{color:var(--ac)}.s{color:var(--rd)}.badge{background:#1f3a2a;color:var(--ac);border-radius:6px;padding:2px 8px;font-size:12px}.badge.n{background:#2b3640;color:var(--mu)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 4px;text-align:right;border-bottom:1px solid var(--bd)}
+th:first-child,td:first-child{text-align:left}.sc{overflow-x:auto}
+input[type=text]{width:100%;background:#121820;border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:6px;margin-top:8px}
+label{display:flex;gap:8px;align-items:center;margin-top:8px}
+</style></head><body>
+<h1>Monthly Green Candle Reclaims S3</h1>
+<div class="mu" id="meta"></div>
+<div class="mu">Green monthly candle closes back above yearly Camarilla S3 after a dip into the S3-S4 zone. <a href="index.html">Pattern scan</a></div>
+<h2>Signals for <span id="sm"></span></h2><div id="sig"></div>
+<h2>Backtest</h2>
+<div class="card sc"><table id="bt"></table></div>
+<div class="mu">Win % / average return after N months from the signal close, compared with any month. Past results do not guarantee future returns.</div>
+<script id="data" type="application/json">{"generated": "17 Nov 2026", "signal_month": "Oct 2026", "scanned": 447, "risk": 500, "rr": 3, "tol": 1.5, "horizons": [3, 6, 12], "signals": [{"symbol": "BHARTIARTL", "month": "Oct 2026", "filt": false, "close": 1973.7, "S3": 1908.9, "S4": 1738.36, "reclaim": 3.4, "rsi": 60.4, "entry": 1985.0, "stop": 1726.3, "target": 2761.1, "risk_pct": 13.0, "qty": 1}, {"symbol": "BHARTIHEXA", "month": "Oct 2026", "filt": false, "close": 1636.2, "S3": 1577.29, "S4": 1352.7, "reclaim": 3.7, "rsi": 62.9, "entry": 1695.5, "stop": 1359.2, "target": 2704.4, "risk_pct": 19.8, "qty": 1}, {"symbol": "FSL", "month": "Oct 2026", "filt": false, "close": 292.9, "S3": 288.89, "S4": 249.15, "reclaim": 1.4, "rsi": 53.0, "entry": 319.0, "stop": 246.65, "target": 536.05, "risk_pct": 22.7, "qty": 6}, {"symbol": "GILLETTE", "month": "Oct 2026", "filt": false, "close": 7077.0, "S3": 7039.23, "S4": 5951.58, "reclaim": 0.5, "rsi": 43.2, "entry": 7389.0, "stop": 6860.0, "target": 8976.0, "risk_pct": 7.2, "qty": 0}, {"symbol": "HDFCAMC", "month": "Oct 2026", "filt": false, "close": 2309.5, "S3": 2287.08, "S4": 1959.15, "reclaim": 1.0, "rsi": 50.0, "entry": 2458.7, "stop": 2215.6, "target": 3188.0, "risk_pct": 9.9, "qty": 2}, {"symbol": "KFINTECH", "month": "Oct 2026", "filt": false, "close": 850.9, "S3": 849.89, "S4": 632.24, "reclaim": 0.1, "rsi": 46.8, "entry": 903.1, "stop": 784.0, "target": 1260.4, "risk_pct": 13.2, "qty": 4}, {"symbol": "MPHASIS", "month": "Oct 2026", "filt": false, "close": 2525.6, "S3": 2441.74, "S4": 2165.17, "reclaim": 3.4, "rsi": 53.0, "entry": 2618.4, "stop": 2144.8, "target": 4039.2, "risk_pct": 18.1, "qty": 1}, {"symbol": "PERSISTENT", "month": "Oct 2026", "filt": false, "close": 6048.0, "S3": 5555.87, "S4": 4883.79, "reclaim": 8.9, "rsi": 57.9, "entry": 6078.0, "stop": 5162.0, "target": 8826.0, "risk_pct": 15.1, "qty": 0}], "backtest": [{"name": "Green candle reclaims S3", "n": 2169, "w3": 57.2, "a3": 6.7, "w6": 57.4, "a6": 12.0, "w12": 65.0, "a12": 34.4}, {"name": "+ RSI & downtrend filters", "n": 351, "w3": 59.0, "a3": 9.6, "w6": 54.8, "a6": 13.2, "w12": 64.8, "a12": 46.3}, {"name": "Any month (baseline)", "n": 96851, "w3": 57.8, "a3": 8.1, "w6": 61.0, "a6": 17.5, "w12": 65.0, "a12": 40.2}]}</script>
+<script>
+const D=JSON.parse(document.getElementById('data').textContent);
+const f=n=>Number(n).toLocaleString('en-IN',{maximumFractionDigits:2});
+let st={};try{st=JSON.parse(localStorage.getItem('gr3')||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem('gr3',JSON.stringify(st))}catch(e){}};
+document.getElementById('meta').textContent=`Updated ${D.generated} | ${D.scanned} stocks scanned | zone \u00b1${D.tol}% | risk \u20b9${D.risk}/trade | target ${D.rr}R`;
+document.getElementById('sm').textContent=D.signal_month;
+const box=document.getElementById('sig');
+if(!D.signals.length)box.innerHTML='<div class="card mu">No signals this month.</div>';
+D.signals.forEach(x=>{
+ const k=x.symbol+x.month,s=st[k]||{};
+ const c=document.createElement('div');c.className='card';
+ c.innerHTML=`<div class="row"><b>${x.symbol}</b><span class="badge ${x.filt?'':'n'}">${x.filt?'RSI + trend filters \u2713':'Base reclaim'}</span></div>
+ <div class="mu">${x.month} close \u20b9${f(x.close)} (${x.reclaim}% above S3) | S3 \u20b9${f(x.S3)} | S4 \u20b9${f(x.S4)} | RSI ${x.rsi}</div>
+ <div class="g"><div><b>\u20b9${f(x.entry)}</b><span>Entry (high)</span></div><div><b class="s">\u20b9${f(x.stop)}</b><span>Stop (${x.risk_pct}%)</span></div><div><b class="t">\u20b9${f(x.target)}</b><span>Target</span></div></div>
+ <div style="margin-top:8px">Qty for \u20b9${D.risk} risk: <b>${x.qty}</b></div>
+ <label><input type="checkbox" ${s.taken?'checked':''}> Trade taken</label>
+ <input type="text" placeholder="Notes / skip reason" value="${(s.note||'').replace(/"/g,'&quot;')}">`;
+ const [cb,tx]=c.querySelectorAll('input');
+ cb.onchange=()=>{st[k]={...st[k],taken:cb.checked};save()};
+ tx.oninput=()=>{st[k]={...st[k],note:tx.value};save()};
+ box.appendChild(c);
+});
+let h='<tr><th>Rule</th><th>N</th>'+D.horizons.map(m=>`<th>${m}M win/avg</th>`).join('')+'</tr>';
+D.backtest.forEach(r=>{h+=`<tr><td>${r.name}</td><td>${r.n}</td>`+D.horizons.map(m=>r['w'+m]==null?'<td>-</td>':`<td>${r['w'+m]}% / ${r['a'+m]}%</td>`).join('')+'</tr>'});
+document.getElementById('bt').innerHTML=h;
+</script></body></html>
